@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('kendaraans', function (Blueprint $table) {
             $table->id();
             $table->string('plat_nomor');
-        $table->string('nama_pemilik');
-        $table->string('merk_kendaraan');
-        $table->text('keluhan');     
+            $table->string('nama_pemilik');
+            $table->string('merk_kendaraan');
+            $table->text('keluhan');
             $table->timestamps();
         });
     }
